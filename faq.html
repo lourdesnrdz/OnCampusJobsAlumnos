@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>On Campus Jobs</title>
+
+	<!--
+			<link rel="stylesheet" href="css/bootstrap.min.css">       
+			<script src="js/jquery-3.2.1.slim.min.js"></script>
+			<script src="js/popper.min.js" ></script>
+			<script src="js/bootstrap.min.js" ></script>
+	-->      
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	       
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<!--iconos-->
+	<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+	<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+	 
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<style type="text/css">
+		.container-fluid {
+			/*background-color: #666666;*/
+			width: 90%;
+		}
+
+		.description {
+			padding: 0 3%;
+			font-size: 18px;
+		}
+
+		.card {
+			border: none;
+			/*margin: 0;*/
+		}
+
+		.card-text {
+			text-align: center;
+		}
+
+		#menu {
+			/*position: relative;*/
+			background-color: #343a40;
+		}
+
+		.tec {
+			color: #40b4e5
+		}
+
+		.tecmi {
+			color: #6ebe44;
+		}
+
+		.nav-item {
+			font-size: 15px;
+		}
+	</style>
+	   
+	<!-- <script>
+	    $(window).scroll(function() {
+
+	        if ($("#menu").offset().top > 2) {
+	            $("#menu").addClass("bg-dark");
+	        } else {
+	            $("#menu").removeClass("bg-dark");
+	        }
+	    });
+	</script> -->
+                                                 
+</head>
+<body>
+	<!-- class="container-fluid" -->
+	<div>	
+		<!-- Cabecera -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top  border-bottom menu-fixed" id="menu">
+			<button id="navButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon " id="spanNavButton"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+				<ul class="navbar-nav">
+					<li class="nav-item align-self-center dropdown" style="padding: 0 20px;">
+					  	<a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CONÓCENOS</a>
+						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="beneficios.html">BENEFICIOS</a>
+							<a class="dropdown-item" href="lineamientos.html">LINEAMIENTOS</a>
+							<a class="dropdown-item" href="compromisos.html">COMPROMISOS</a>
+							<a class="dropdown-item" href="faq.html">FAQs</a>
+						</div>
+					<li>
+
+					<li class="nav-item align-self-center" style="padding: 0 20px;">
+					  	<a class="nav-link text-white" href="testimonios.html" role="button">TESTIMONIOS</a>
+					<li>
+
+				  	 <li class="nav-item align-self-center dropdown" style="padding: 0 20px;">
+						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
+						<a href="index.html"><img src="img/logo.png" class="logoOCJ"></a>
+					<li>				  	
+				  
+					<li class="nav-item align-self-center dropdown" style="padding: 0 20px;">
+					  	<a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ENCUESTAS</a>
+						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://itesm.co1.qualtrics.com/jfe/form/SV_bO59ghgYyte90CF" target="_blank">INICIAL</a>
+							<a class="dropdown-item" href="https://itesm.co1.qualtrics.com/jfe/form/SV_1A2fOIq9pftxEeF" target="_blank">FINAL</a>
+						</div>
+					<li>
+
+					<li class="nav-item align-self-center" style="padding: 0 20px;">
+					  	<a class="nav-link text-white" href="https://forms.office.com/Pages/ResponsePage.aspx?id=pj5axnwPC0CJNFptwXBWRe6_GYWUrGZKljhDr6Wv-4VURDNWTEhVM1cyRkMzNFRPNUEwNEVXNTdVWS4u" target="_blank" role="button">POSTÚLATE</a>
+					<li>
+				  
+				</ul>
+			</div>			
+		</nav>
+	</div>	
+ 		
+ 		<!-- <br><br> -->
+ 		<br>
+			
+	<!-- Slider -->
+	<img class="card-img-top" src="img/faq/FAQ2.png" alt="Card image cap">
+	
+		
+	<br><br>			
+	
+			
+	
+	<div class="container-fluid" id="content">
+
+		<!-- <br> -->
+		<h1 style="padding: 0 3%;">FAQs</h1>
+		<p class="description">A continuación encontrarás un banco de preguntas frecuentes que pueden aclarar tus dudas sobre On Campus Jobs</p>
+
+		
+		<!-- FAQ -->
+		<div class="accordion" id="accordionExample">
+			<div class="card border-0">
+				<div class="card-body">								
+
+					<div class="accordion" id="accordionExample">
+		
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingUno">
+						    	<h5 class="mb-0">
+							        <button class="btn bg-transparent" type="button" data-toggle="collapse" data-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+							        	<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseUno" aria-expanded="false" aria-controls="collapseUno">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿A partir de qué semestre puedo ser Campus Intern? 
+							        </button>
+						    	</h5>
+						    </div>
+
+						    <div id="collapseUno" class="collapse" aria-labelledby="headingUno" data-parent="#accordionExample">
+						    	<div class="card-body text-justify">
+						        	<!-- <b class="tec">Tec:</b>  -->Puedes participar desde tu primer semestre.
+						        	<!-- <br> -->
+									<!-- <b class="tecmi">Tecmilenio:</b> Puedes participar desde tu segundo semestre. -->
+						    	</div>
+						    </div>
+						</div>
+
+						
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingDos">
+						    	<h5 class="mb-0">
+							        <button class="btn bg-transparent" type="button" data-toggle="collapse" data-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Todos los desafíos empiezan con cada semestre?
+							        </button>
+						    	</h5>
+						    </div>
+
+						    <div id="collapseDos" class="collapse" aria-labelledby="headingDos" data-parent="#accordionExample">
+						    	<div class="card-body text-justify">
+						    		<!-- <b class="tec">Tec:</b>  -->A lo largo del semestre hay desafíos que inician y terminan, por lo que no están alineados al inicio del semestre.
+						        	<!-- <br>
+									<b class="tecmi">Tecmilenio:</b> Todos los desafíos inician en la cuarta semana del semestre. -->
+						    	</div>
+						    </div>
+						</div>
+						
+						
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingTres">
+						    	<h5 class="mb-0">
+							        <button class="btn bg-transparent" type="button" data-toggle="collapse" data-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>			
+										¿En todos los campus hay On Campus Jobs?
+							        </button>
+						    	</h5>
+						    </div>
+
+						    <div id="collapseTres" class="collapse" aria-labelledby="headingTres" data-parent="#accordionExample">
+						    	<div class="card-body text-justify">
+						    		Sí, On Campus Jobs es un programa a nivel nacional. Así mismo, existen desafíos en los que el líder puede estar en un campus y el campus intern en otro.
+						    	</div>
+						    </div>
+						</div>	
+
+						
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingCuatro">
+						    	<h5 class="mb-0">
+							        <button class="btn bg-transparent" type="button" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="true" aria-controls="collapseCuatro">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>			
+										¿Se tiene un apoyo económico?
+							        </button>
+						    	</h5>
+						    </div>
+
+						    <div id="collapseCuatro" class="collapse" aria-labelledby="headingCuatro" data-parent="#accordionExample">
+						    	<div class="card-body text-justify">
+						    		Sí, es un apoyo económico de $4,000 mensuales por participar 20 horas a la semana. Si estás participando en un programa, el apoyo económico varía puesto que se tienen otros beneficios. Consulta con tu coordinador de programa.
+						    	</div>
+						    </div>
+						</div>
+
+						
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingCinco">
+							    <h5 class="mb-0">
+							        <button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="true" aria-controls="collapseCinco">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Tengo una fecha límite para inscribirme a On Campus Jobs? 
+							        </button>
+							    </h5>
+						    </div>
+
+						    <div id="collapseCinco" class="collapse" aria-labelledby="headingCinco" data-parent="#accordionExample">
+						    	<div class="card-body text-justify">
+						    		<!-- <b class="tec">Tec:</b>  -->No existe una fecha límite, por lo que puedes inscribirte a lo largo de tu semestre, verano o invierno.
+						    		<!-- <br>
+									<b class="tecmi">Tecmilenio:</b> Recibirás una invitación con las fechas de inscripción. -->
+						    	</div>
+						    </div>
+						</div>
+						
+
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingSeis">
+							    <h5 class="mb-0">
+							        <button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="true" aria-controls="collapseSeis">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Cuánto tiempo puedo participar en un desafío?
+							        </button>
+							    </h5>
+						    </div>
+
+						    <div id="collapseSeis" class="collapse" aria-labelledby="headingSeis" data-parent="#accordionExample">
+							    <div class="card-body text-justify">
+							    	<!-- <b class="tec">Tec:</b>  -->No hay un tiempo límite para participar en On Campus Jobs o en un desafío específico; puedes ser Campus Intern toda tu carrera profesional.
+							    	<!-- <br>
+									<b class="tecmi">Tecmilenio:</b> Puedes ser Campus Intern a partir de segundo semestre y durante tu carrera profesional, excepto en tu semestre empresarial. -->
+								</div>
+						    </div>
+						</div>
+						
+
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingSiete">
+						    	<h5 class="mb-0">
+							    	<button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="true" aria-controls="collapseSiete">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Puedo participar en el mismo desafío más de una vez? 
+							        </button>
+						      	</h5>
+						    </div>
+
+					    	<div id="collapseSiete" class="collapse" aria-labelledby="headingSiete" data-parent="#accordionExample">
+							    <div class="card-body text-justify">
+							    	Puedes vivir desafíos diferentes o participar en uno mismo si el líder del desafío y tú están de acuerdo.
+					    		</div>
+					   		</div>
+						</div>
+
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingOcho">
+						    	<h5 class="mb-0">
+							    	<button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseOcho" aria-expanded="true" aria-controls="collapseOcho">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseOcho" aria-expanded="false" aria-controls="collapseOcho">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Participar en On Campus Jobs me revalida horas de Servicio Social?
+							        </button>
+						      	</h5>
+						    </div>
+
+					    	<div id="collapseOcho" class="collapse" aria-labelledby="headingOcho" data-parent="#accordionExample">
+							    <div class="card-body text-justify">
+							    	Participar en On Campus Jobs no revalida horas de Servicio Social Ciudadano.
+					    		</div>
+					   		</div>
+						</div>
+
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingNueve">
+						    	<h5 class="mb-0">
+							    	<button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseNueve" aria-expanded="true" aria-controls="collapseNueve">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseNueve" aria-expanded="false" aria-controls="collapseNueve">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Puedo participar en On Campus Jobs siendo EXATEC?
+							        </button>
+						      	</h5>
+						    </div>
+
+					    	<div id="collapseNueve" class="collapse" aria-labelledby="headingNueve" data-parent="#accordionExample">
+							    <div class="card-body text-justify">
+							    	On Campus Jobs es un programa para estudiantes activos de profesional, por lo que no es posible participar en este programa si eres EXATEC.
+					    		</div>
+					   		</div>
+						</div>
+
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingDiez">
+						    	<h5 class="mb-0">
+							    	<button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseDiez" aria-expanded="true" aria-controls="collapseDiez">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseDiez" aria-expanded="false" aria-controls="collapseDiez">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Cuáles son los requisitos para ser Campus Intern?
+							        </button>
+						      	</h5>
+						    </div>
+
+					    	<div id="collapseDiez" class="collapse" aria-labelledby="headingDiez" data-parent="#accordionExample">
+							    <div class="card-body text-justify">
+							    	Para ser Campus Intern necesitas: 
+							    	<ul>
+							    		<li>Ser estudiante inscrito en el Tec y con estatus regular</li>
+							    		<li>Contar con disponibilidad de 20 horas a la semana</li>
+							    		<li>No tener faltas a la integridad académica (FIA)</li>
+							    		<li>No tener materias reprobadas en tu semestre actual y/o anterior</li>
+							    		<li>Contar con un promedio mínimo global de 85</li>
+							    		<li><b>En caso de ser estudiante extranjero:</b> contar con tarjeta migratoria vigente</li>
+							    	</ul>
+					    		</div>
+					   		</div>
+						</div>
+
+						<div class="card">
+						    <div class="card-header bg-light text-left" id="headingOnce">
+						    	<h5 class="mb-0">
+							    	<button class="btn bg-transparent glyphicon glyphicon-minus" type="button" data-toggle="collapse" data-target="#collapseOnce" aria-expanded="true" aria-controls="collapseOnce">
+										<a href="#" class="btn bg-transparent" data-toggle="collapse" data-target="#collapseOnce" aria-expanded="false" aria-controls="collapseOnce">
+											<ion-icon name="arrow-dropdown" style="color:#000000;"></ion-icon>
+							  			</a>
+										¿Cuáles son mis compromisos como Campus Intern?
+							        </button>
+						      	</h5>
+						    </div>
+
+					    	<div id="collapseOnce" class="collapse" aria-labelledby="headingOnce" data-parent="#accordionExample">
+							    <div class="card-body text-justify">
+							    	Al ingresar como Campus Intern te comprometes a:
+							    	<ul>
+								    	<li>Mantener un buen desempeño académico</li>
+								    	<li>Cumplir con los entregables y horarios de trabajo acordados</li>
+								    	<li>Registrar y dar seguimiento de mis Compromisos en Success Factors</li>
+								    	<li>Mantener comunicación constante con tu líder y equipo; ser propositivo, desarrollando propuestas de valor</li>
+								    	<li>Actuar de manera autodirigida; generar un impacto positivo en la Institución y la comunidad</li>
+								    	<li>Realizar tus tareas con excelencia en tiempo y forma</li>
+								    	<li>Mantener una conducta con base en el Código de Ética de la Institución y a dar retroalimentación al CVC de tu experiencia en el programa</li>
+								    </ul>
+					    		</div>
+					   		</div>
+						</div>
+
+
+					</div>		
+				</div>
+			</div>				
+		</div>
+	</div>
+
+	<!-- <br> -->
+	
+	<br>
+	
+	<!-- FOOTER -->
+	<footer class="blockquote-footer bg-dark">
+		<div class="row">
+		
+			<div class="col-sm-4" style="text-align: center;">				
+				<a href="https://tec.mx/es" target="_blank">
+				<img class="img-fluid" src="img/site-tec-white-logo.png" alt="Logo" style="max-width: 180px;">
+				<a>
+				<br><br>
+ 			</div>
+ 			
+ 			<div class="col-sm-4" style="font-size: 12px; ">				
+				<p class="text-white text-center">
+					Av. Eugenio Garza Sada 2501 Sur Col. Tecnológico. C.P.64849 Monterrey, Nuevo León.
+				</p>
+
+				<p class="text-white text-center">
+					Contáctanos: <a href="mailto:oncampusjobs@servicios.tec.mx" style="color: inherit;">oncampusjobs@servicios.tec.mx</a>
+				</p>
+
+ 			</div>
+		
+			<div class="col-sm-4">
+				<p class="text-white" style="text-align: center;">
+					Síguenos:<br>
+					<a href="https://twitter.com/tecdemonterrey" target="_blank" style="color: #ffffff;"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+					<a href="https://www.facebook.com/TecdeMonterrey/" target="_blank" style="color: #ffffff;"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+					<a href="https://www.youtube.com/TECdeMonterrey" target="_blank" style="color: #ffffff;"><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+					<a href="https://www.linkedin.com/school/itesm/" target="_blank" style="color: #ffffff;"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+					<a href="https://www.instagram.com/tecdemonterrey/" target="_blank" style="color: #ffffff;"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+				</p>
+ 			</div>
+ 			
+		</div>
+  	</footer>
+
+</body>
+</html>

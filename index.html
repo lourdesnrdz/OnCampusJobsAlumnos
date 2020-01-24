@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>On Campus Jobs</title>
+
+	<!--
+			<link rel="stylesheet" href="css/bootstrap.min.css">       
+			<script src="js/jquery-3.2.1.slim.min.js"></script>
+			<script src="js/popper.min.js" ></script>
+			<script src="js/bootstrap.min.js" ></script>
+	-->      
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	       
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<!--iconos-->
+	<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+	<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<style type="text/css">
+
+	.description {
+		padding: 0 5%;
+		font-size: 18px;
+	}
+
+	.col-description {
+		padding: 0 5% 0 10px;
+		font-size: 22px;
+		text-align: left;
+	}
+
+	.card-image {
+		/*padding-left: 5%;*/
+		max-width: 350px;
+		max-height: 250px;
+		/*position: absolute;*/
+	}
+
+	.flex-container {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  /*background-color: DodgerBlue;*/
+	  margin: 0 5%;
+	}
+
+	p .flex-container .box {
+	  /*background-color: #f1f1f1;*/
+	  background-color: #FFFFFF;
+	  width: 60%;
+	  /*padding: 5%;*/
+	}
+
+	img .flex-container .box {
+	  /*background-color: #f1f1f1;*/
+	  background-color: #FFFFFF;
+	  width: 40%;
+	}
+
+	.container-fluid {
+		display: flex;
+		flex-wrap: nowrap;
+		padding: 0 10%;
+	}
+
+	.box3 {
+		color: #FFFFFF;
+		text-align: center;
+
+	}
+
+	.container-fluid .box3 {
+		width: 33%;
+		padding: 2%;
+	}
+
+	.imgDesafio {
+		width: 40%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.carousel-item {
+		padding: 0;
+		/*margin: auto;*/
+	}
+
+	/*#postulateimg {
+		max-width: 80%;
+		padding: none;
+		width: 300px;
+	}*/
+
+	.carousel-caption h3 {
+		font-size: 2vw;
+	}
+	.carousel-caption h4 {
+		font-size: 2vw;
+	}
+
+	.carousel-caption p {
+		font-size: 16px;
+		font-size: 1vw;
+	}
+
+	.threeimg {
+		padding: 0;
+		width: 100%;
+	}
+
+	#menu {
+		/*position: relative;*/
+		background-color: #343a40;
+	}
+
+	.figure {
+		text-align: center;
+	}
+
+	.nav-item {
+		font-size: 15px;
+	}
+
+	button {
+		cursor: pointer;
+	}
+
+	.imgbutton {
+		transition: transform .5s ease;
+	}
+
+	.imgbutton:hover {
+		/*opacity: 0.9;*/
+		transform: scale(1.05);
+	}
+
+	.interns {
+		color: #40b4e5;
+
+	}
+
+	.interns:hover {
+		color: #40b4e5;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	</style>
+	   
+	<!-- <script>
+	    $(window).scroll(function() {
+
+	        if ($("#menu").offset().top > 50) {
+	            $("#menu").addClass("bg-dark");
+	        } else {
+	            $("#menu").removeClass("bg-dark");
+	        }
+	    });
+
+	</script> -->
+                                                 
+</head>
+<body>
+	<!-- class="container-fluid" -->
+	<!-- class="container"  -->
+	<div>	
+		<!-- Cabecera -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top  border-bottom menu-fixed" id="menu">
+			<button id="navButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon " id="spanNavButton"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+				<ul class="navbar-nav">
+					<li class="nav-item align-self-center dropdown" style="padding: 0 20px;">
+					  	<a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CONÓCENOS</a>
+						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="beneficios.html">BENEFICIOS</a>
+							<a class="dropdown-item" href="lineamientos.html">LINEAMIENTOS</a>
+							<a class="dropdown-item" href="compromisos.html">COMPROMISOS</a>
+							<a class="dropdown-item" href="faq.html">FAQs</a>
+						</div>
+					</li>
+
+					<li class="nav-item align-self-center" style="padding: 0 20px;">
+					  	<a class="nav-link text-white" href="testimonios.html" role="button">TESTIMONIOS</a>
+					</li>
+
+				  	 <li class="nav-item align-self-center" style="padding: 0 20px;">
+						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
+						<a href="index.html"><img src="img/logo.png" class="logoOCJ"></a>
+					</li>				  	
+				  
+					<li class="nav-item align-self-center dropdown" style="padding: 0 20px;">
+					  	<a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ENCUESTAS</a>
+						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://itesm.co1.qualtrics.com/jfe/form/SV_bO59ghgYyte90CF" target="_blank">INICIAL</a>
+							<a class="dropdown-item" href="https://itesm.co1.qualtrics.com/jfe/form/SV_1A2fOIq9pftxEeF" target="_blank">FINAL</a>
+						</div>
+					</li>
+
+					<li class="nav-item align-self-center" style="padding: 0 20px;">
+					  	<a class="nav-link text-white" href="https://forms.office.com/Pages/ResponsePage.aspx?id=pj5axnwPC0CJNFptwXBWRe6_GYWUrGZKljhDr6Wv-4VURDNWTEhVM1cyRkMzNFRPNUEwNEVXNTdVWS4u" target="_blank" role="button">POSTÚLATE</a>
+					</li>
+				  
+				</ul>
+				
+		</nav>
+			</div>		
+			
+	<!-- Slider -->
+	<div class="row-full" align="center">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active text-left"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1" class="text-left"></li>
+			</ol>
+			<br>
+			<div class="carousel-inner">
+				
+				<div class="carousel-item active">
+					<a href="testimonios.html">
+				  		<img class="" src="img/principal/OCJT4.png" alt="First slide" width="100%">	 
+				  	</a> 
+				</div>
+				
+				<div class="carousel-item">
+				    <a href="http://www.facebook.com/groups/oncampusjobs" target="_blank">
+				    	<!-- d-block img-fluid -->
+				    	<img class="" src="img/principal/OCJFB3.png" alt="Second slide" width="100%">
+					</a>			  
+				</div>		
+			</div>			
+		</div>
+		  
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	
+	<!-- END SLIDER -->
+
+	<br>	
+
+	<div>
+		<p class="description">
+			<b>On Campus Jobs</b> es un programa que busca atraer a los mejores alumnos del Tec para <b>desarrollar competencias y habilidades laborales</b> al participar en desafíos de alto impacto que generen valor en su formación profesional. Pueden participar alumnos de cualquier semestre y cualquier carrera, los cules son llamados Campus Interns.
+		</p>
+
+		<!-- <br> -->
+
+		<<!-- div id="sub-hero" class="module sub-hero">
+	        <div class="inner">
+	            <div class="module a">
+	            	<img src="img/principal/postulate.png">
+	            </div>
+	            <div class="module b">
+	                <h2>Postúlate</h2>
+	            </div>
+	        </div>
+	    </div> -->
+
+		<div class="row">
+			<div class="col-sm-8">
+				<img src="img/principal/postulate.png" id="postulateimg" width="103%">
+			</div>
+			<button class="col-sm-4 btn bg-dark" onclick=" window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=pj5axnwPC0CJNFptwXBWRe6_GYWUrGZKljhDr6Wv-4VURDNWTEhVM1cyRkMzNFRPNUEwNEVXNTdVWS4u','_blank')" style="text-align: center; border: none; padding: none;">
+				<h2 style="color: white; padding: auto;"><strong>Postúlate</strong></h2>
+			</button>
+		</div>
+
+		<br>
+
+		<p class="description">
+			Como Campus Intern no solo tendrás la oportunidad de aprender y crecer profesionalmente mientras estudias, también podrás hacer conexiones, vivir nuestra cultura y convivir con personas extraordinarias.
+
+			<br><br>
+
+			Durante tu carrera universitaria podrás participar en diferentes desafíos y recibir grandes beneficios.
+
+			<br><br>
+
+			Podrás potenciar tu perfil profesional y balancear tu vida académica.
+		</p>
+	</div>
+
+	<br>
+	
+	<div class="row bg-dark"> 
+		<h4 class="col-sm-12" style="padding: 15px 0; color: white; text-align: center;">¡Forma parte de este increíble programa y libera tu potencial transformador!</h4>
+		
+	</div>
+	
+	<br>		
+	
+	<div>
+		<p class="description">
+			Dentro de On Campus Jobs también participan los siguientes programas:
+		</p>
+	</div>
+
+	<br>
+
+	<!-- <div class="container-fluid">
+		<div class="box3">
+        	<img class="programasimg" style="vertical-align: middle; width: 100%;" src="img/story.png">
+        </div>
+        <div class="box3">
+        	<img class="programasimg" style="vertical-align: middle; width: 100%;" src="img/heroX.png">
+        </div>
+        <div class="box3">
+        	<img class="programasimg" style="vertical-align: middle; width: 100%;" src="img/embajadores.png">
+        </div>
+    </div> -->
+
+    <div class="row">
+		<div class="figure col-sm-4">
+        	<img width="60%" src="img/story.png">
+        	<br><br>
+        </div>
+        <div class="figure col-sm-4">
+        	<img width="60%" src="img/heroX.png">
+        	<br><br>
+        </div>
+        <div class="figure col-sm-4">
+        	<a href="https://embajadorestec.com/" target="_blank"><img width="60%" src="img/embajadores.png"></a>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+    	<p class="description">
+    		Por lo que si estás participando en alguno de ellos, también estarás participando en On Campus Jobs.
+    		<!-- <br><br> -->
+			<!-- Conoce más sobre On Campus Jobs: -->
+    	</p>
+    </div>
+
+    <br>
+
+	<div class="row bg-dark"> 
+		<h4 class="col-sm-12" style="padding: 15px 0; color: white; text-align: center;">Conoce más sobre On Campus Jobs:</h4>
+		
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6" style="padding: 0;">
+			<a href="testimonios.html"><img class="col-sm-12 imgbutton" src="img/principal/Testimonios2.png" height="100%"></a>
+		</div>
+		<div class="col-sm-6" style="padding: 0;">
+			<!-- <div class="row threeimg"> -->
+				<a href="beneficios.html"><img class="row imgbutton" src="img/principal/Beneficios2.png" style="width: 100%"></a>
+			<!-- </div> -->
+		
+			<!-- <div class="row threeimg"> -->
+				<a href="lineamientos.html"><img class="row imgbutton" src="img/principal/Lineamientos2.png" style="width: 100%"></a>
+			<!-- </div> -->
+		</div>
+	</div>
+
+	<br>
+
+	<div style="text-align: right;">
+    	<!-- <p class="description">
+    		
+    		Este sitio fue creado por <strong>Campus Interns</strong>. <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#campusinterns">Conoce más aquí</button>
+    	</p> -->
+    	<p class="description">
+    		Conoce a los Campus Interns que hicieron el sitio <a  data-toggle="modal" href="#campusinterns"><strong>aquí</strong></a>
+    	</p>
+    </div>
+
+    <div id="campusinterns" class="modal fade container border-0" role="dialog">
+	  	<div class="modal-dialog modal-lg">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		      		<h3><strong>Conoce a nuestros Campus Interns</strong></h3>
+		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	</div>
+		      	<div class="modal-body ">
+		      		<div class="row">
+		      			<div class="col-sm-4">
+		      				<img src="img/campusinterns/antonio.jpg" style="width: 100%">
+		      				<br>
+		      			</div>
+		      			<div class="col-sm-8">
+		      				<h5><em>"Para mí trabajar en el Tec es la oportunidad de desarrollarme profesionalmente en un ambiente excelente y sin descuidar mis estudios."</em></h5>
+		      				<br>
+			      			<h4>
+			      				<strong>
+			      					Francisco Antonio Cepeda
+			      				</strong>
+			      			</h4>
+			      			<!-- <br> -->
+			      			<h5>Licenciatura en Relaciones Internacionales</h5>
+			      			<!-- <br> -->
+			      			<h6><strong>Campus Intern</strong> desde junio 2019.</h6>
+			      			<!-- <p>
+			      				Estudiante de 8vo semestre de Licenciatura en Relaciones Internacionales
+			      				<br><br>
+			      				<strong>Campus Intern</strong> desde junio 2019.
+			      			</p> -->
+			      		</div>
+		      		</div>
+		      		<br><br>
+		      		<div class="row">
+		      			<div class="col-sm-4">
+		      				<img src="img/campusinterns/lourdes.jpg" style="width: 100%">
+		      				<br>
+		      			</div>
+		      			<div class="col-sm-8">
+		      				<h5><em>"Para mí ser Campus Intern significa crecimiento personal y profesional a través de proyectos desafiantes."</em></h5>
+		      				<br>
+			      			<h4>
+			      				<strong>
+				      				Lourdes Navarrete Rodríguez
+				      			</strong>
+			      			</h4>
+			      			<!-- <br> -->
+			      			<h5>Ingeniería en Tecnologías Computacionales</h5>
+			      			<!-- <br> -->
+			      			<h6><strong>Campus Intern</strong> desde noviembre 2019.</h6>
+			      			<!-- <p>
+			      				Estudiante de 8vo semestre de Ingeniería en Tecnologías Computacionales.
+			      				<br><br>
+			      				<strong>Campus Intern</strong> desde noviembre 2019.
+			      			</p> -->
+			      		</div>
+		      		</div>
+			    </div>
+		  	</div>
+		</div>
+	</div>
+	<!-- <br> -->
+
+	<!-- FOOTER -->
+	<footer class="blockquote-footer bg-dark">
+		<div class="row">
+		
+			<div class="col-sm-4" style="text-align: center;">				
+				<a href="https://tec.mx/es" target="_blank">
+				<img class="img-fluid" src="img/site-tec-white-logo.png" alt="Logo" style="max-width: 180px;">
+				<a>
+				<br><br>
+ 			</div>
+ 			
+ 			<div class="col-sm-4" style="font-size: 12px; ">				
+				<p class="text-white text-center">
+					Av. Eugenio Garza Sada 2501 Sur Col. Tecnológico. C.P.64849 Monterrey, Nuevo León.
+				</p>
+
+				<p class="text-white text-center">
+					Contáctanos: <a href="mailto:oncampusjobs@servicios.tec.mx" style="color: inherit;">oncampusjobs@servicios.tec.mx</a>
+				</p>
+
+ 			</div>
+		
+			<div class="col-sm-4">
+				<p class="text-white" style="text-align: center;">
+					Síguenos:<br>
+					<a href="https://twitter.com/tecdemonterrey" target="_blank" style="color: #ffffff;"><ion-icon name="logo-twitter" size="large"></ion-icon></a>
+					<a href="https://www.facebook.com/TecdeMonterrey/" target="_blank" style="color: #ffffff;"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+					<a href="https://www.youtube.com/TECdeMonterrey" target="_blank" style="color: #ffffff;"><ion-icon name="logo-youtube" size="large"></ion-icon></a>
+					<a href="https://www.linkedin.com/school/itesm/" target="_blank" style="color: #ffffff;"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+					<a href="https://www.instagram.com/tecdemonterrey/" target="_blank" style="color: #ffffff;"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+				</p>
+ 			</div>
+ 			
+		</div>
+  	</footer>
+
+</body>
+</html>
